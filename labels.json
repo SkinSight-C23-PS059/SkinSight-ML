@@ -1,0 +1,21 @@
+{
+    "labels": [
+      "Actinic Keratosis",
+      "Eczema",
+      "Nail Fungus",
+      "Psoriasis",
+      "Seborrheic Keratosis",
+      "Fungal Infections",
+      "Viral Infections"
+    ],
+    "descriptions": {
+      "Actinic Keratosis": "Actinic keratosis is a rough, scaly patch on the skin caused by years of sun exposure. It can potentially develop into skin cancer if left untreated.",
+      "Eczema": "Eczema is a chronic skin condition characterized by dry, itchy, and inflamed skin. It can be triggered by various factors, including allergies and irritants.",
+      "Nail Fungus": "Nail fungus, also known as onychomycosis, is a common condition that affects the nails. It causes the nails to become thickened, discolored, and brittle.",
+      "Psoriasis": "Psoriasis is a chronic autoimmune disease that causes the rapid buildup of skin cells, resulting in red, scaly patches. It can affect various parts of the body.",
+      "Seborrheic Keratosis": "Seborrheic keratosis is a common benign skin growth that appears as a waxy, raised, and often dark or wart-like lesion. It is typically harmless.",
+      "Fungal Infections": "Fungal infections of the skin, such as ringworm and candidiasis, are caused by various types of fungi. They can cause itching, redness, and discomfort.",
+      "Viral Infections": "Viral infections of the skin, including warts and molluscum contagiosum, are caused by different types of viruses. They often result in skin growths or lesions."
+    }
+  }
+  
