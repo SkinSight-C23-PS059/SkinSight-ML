@@ -1,0 +1,48 @@
+{
+  "labels": [
+      "Actinic Keratosis",
+      "Eczema",
+      "Nail Fungus",
+      "Psoriasis",
+      "Seborrheic Keratosis",
+      "Fungal Infections",
+      "Warts Molluscum and other Viral Infections"
+  ],
+  "descriptions": {
+      "Actinic Keratosis": {
+          "description": "Actinic keratosis is a rough, scaly patch on the skin caused by years of sun exposure. It can potentially develop into skin cancer if left untreated.",
+          "severity": "Low",
+          "action": "If you have actinic keratosis, it is important to protect your skin from sun exposure. Regularly use sunscreen, wear protective clothing, and avoid prolonged sun exposure. It is recommended to consult a dermatologist for proper diagnosis and treatment."
+      },
+      "Eczema": {
+          "description": "Eczema is a chronic skin condition characterized by dry, itchy, and inflamed skin. It can be triggered by various factors, including allergies and irritants.",
+          "severity": "Moderate",
+          "action": "To manage eczema, keep your skin moisturized, avoid triggers that worsen the condition (such as certain soaps or fabrics), and use prescribed medications as directed by a dermatologist."
+      },
+      "Nail Fungus": {
+          "description": "Nail fungus, also known as onychomycosis, is a common condition that affects the nails. It causes the nails to become thickened, discolored, and brittle.",
+          "severity": "Low",
+          "action": "If you suspect nail fungus, it is recommended to consult a dermatologist. Treatment options may include antifungal medications, topical treatments, or in severe cases, removal of the affected nail."
+      },
+      "Psoriasis": {
+          "description": "Psoriasis is a chronic autoimmune disease that causes the rapid buildup of skin cells, resulting in red, scaly patches. It can affect various parts of the body.",
+          "severity": "High",
+          "action": "Psoriasis is a complex condition that requires medical management. It is recommended to consult a dermatologist to develop an individualized treatment plan, which may include topical treatments, oral medications, phototherapy, or biologic injections."
+      },
+      "Seborrheic Keratosis": {
+          "description": "Seborrheic keratosis is a common benign skin growth that appears as a waxy, raised, and often dark or wart-like lesion. It is typically harmless.",
+          "severity": "Low",
+          "action": "Seborrheic keratosis usually does not require treatment unless it causes symptoms or concerns. If desired, they can be removed for cosmetic reasons through procedures like cryotherapy, curettage, or laser therapy."
+      },
+      "Fungal Infections": {
+          "description": "Fungal infections of the skin, such as ringworm and candidiasis, are caused by various types of fungi. They can cause itching, redness, and discomfort.",
+          "severity": "Low",
+          "action": "Treatment for fungal infections typically involves antifungal medications, either in topical or oral form. It is important to maintain good hygiene, keep the affected area clean and dry, and avoid sharing personal items."
+      },
+      "Warts Molluscum and other Viral Infections": {
+          "description": "Viral infections of the skin, including warts and molluscum contagiosum, are caused by different types of viruses. They often result in skin growths or lesions.",
+          "severity": "Low",
+          "action": "Treatment options for viral skin infections include topical medications, cryotherapy, laser therapy, or other procedures. It is advisable to consult a dermatologist to determine the best course of action."
+      }
+  }
+}
