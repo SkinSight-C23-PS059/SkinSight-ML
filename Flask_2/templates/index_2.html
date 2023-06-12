@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Skin Disease Classification</title>
+    <style>
+        .result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Skin Disease Classification</h1>
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".jpg, .jpeg, .png" required>
+        <input type="submit" value="Predict">
+    </form>
+    <div class="result">
+        <h2>Hasil Prediksi:</h2>
+        <p>Nama Penyakit: <span id="predicted-name"></span></p>
+        <p>Tingkat Kepercayaan: <span id="predicted-confidence"></span></p>
+        <p>Deskripsi: <span id="predicted-description"></span></p>
+        <p>Tingkat Keparahan: <span id="predicted-severity"></span></p>
+        <p>Tindakan yang Harus Dilakukan: <span id="predicted-action"></span></p>
+        <p>**Perhatian: Hasil ini hanya prediksi berdasarkan gambar yang diunggah. 
+            Untuk penilaian yang akurat, disarankan untuk berkonsultasi dengan dokter atau ahli kulit.**</p>
+    </div>
+    <script>
+        const form = document.querySelector('form');
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const fileInput = document.querySelector('input[type="file"]');
+            const file = fileInput.files[0];
+            const formData = new FormData();
+            formData.append('file', file);
+
+            const response = await fetch('/predict', {
+                method: 'POST',
+                body: formData
+            });
+
+            if (response.ok) {
+                const result = await response.json();
+                document.getElementById('predicted-name').textContent = result.name;
+                document.getElementById('predicted-confidence').textContent = result.confidence;
+                document.getElementById('predicted-description').textContent = result.description;
+                document.getElementById('predicted-severity').textContent = result.severity;
+                document.getElementById('predicted-action').textContent = result.action;
+            }
+        });
+    </script>
+</body>
+</html>
