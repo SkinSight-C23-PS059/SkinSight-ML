@@ -7,11 +7,8 @@ import json
 
 app = Flask(__name__)
 
-# Load the trained model
-# model = load_model('model_dermnet_v1.h5')
 model = load_model('dermnet_densenet121_82.h5')
 
-# Load the labels and descriptions from a JSON file
 with open('labels.json') as f:
     label_data = json.load(f)
 
@@ -36,7 +33,7 @@ def predict():
     predictions = model.predict(processed_image)
     predicted_index = np.argmax(predictions)
     predicted_label = labels[predicted_index]
-    confidence = float(predictions[0, predicted_index])  # Get the confidence value
+    confidence = float(predictions[0, predicted_index])
     description = label_data['descriptions'][predicted_label]
 
     response = {
